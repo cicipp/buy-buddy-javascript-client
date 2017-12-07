@@ -16,6 +16,6 @@
   "globals": {
     "expect": true,
     "sinon": true,
-    "MAIN": true
+    "BuyBuddySDK": true
   }
 }

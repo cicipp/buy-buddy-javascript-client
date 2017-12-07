@@ -16,6 +16,6 @@ module.exports = function (config) {
         },
         reporters: ['spec'],
         colors: true,
-        browsers: ['PhantomJS']
+        browsers: ['PhantomJS', 'Safari', 'Chrome', 'Firefox']
     });
 };

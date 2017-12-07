@@ -1,12 +1,8 @@
-import A from './moduleA.js';
-import B from './moduleB.js';
+import getCurrentEnvironment from 'src/utils/getCurrentEnvironment';
 
-export default {
-    init(config) {
-        this._config = config;
-
-        return Promise.resolve(); // In case when init() is async
-    },
-    A: A,
-    B: B
+export default class BuyBuddySDK {
+  constructor(config = {}) {
+    this._config = config;
+    this._env = getCurrentEnvironment();
+  }
 };

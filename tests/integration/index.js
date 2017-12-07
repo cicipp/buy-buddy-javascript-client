@@ -1,23 +1,13 @@
-describe('Global reference to SDK', () => {
-    it('should be defined', () => {
-        expect(MAIN).to.not.be.undefined;
-    });
+describe('Global reference to BuyBuddySDK', () => {
+  it('should be defined', () => {
+    expect(BuyBuddySDK).to.not.be.undefined;
+  });
 });
 
-describe('MAIN', () => {
-    describe('A module', () => {
-        describe('foo() method', () => {
-            it('should return a string', () => {
-                expect(MAIN.A.foo()).to.be.a('string');
-            });
-        });
-    });
+describe('BuyBuddySDK', () => {
+  it('should fetch environment properties during initialization', () => {
+  	const sdk = new BuyBuddySDK();
 
-    describe('B module', () => {
-        describe('bar() method', () => {
-            it('should return a string', () => {
-                expect(MAIN.B.bar()).to.be.a('string');
-            });
-        });
-    });
+  	expect(sdk._env).to.not.be.undefined;
+  });
 });

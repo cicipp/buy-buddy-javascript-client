@@ -1,6 +1,6 @@
-# Buy Buddy Javascript Client
+# Buy Buddy Javascript Software Development Kit
 
-Lead maintainer: [Buğra Ekuklu (Chatatata)](https://github.com/Chatatata).
+Lead maintainer: [Buğra Ekuklu (Chatatata)](https://github.com/Chatatata), [Emir Çiftçioğlu (eciftcioglu)](https://github.com/eciftcioglu), [Furkan Ençkü (encku)](https://github.com/encku).
 
 **If you're searching for our licensed web application, go to [BuyBuddyWeb](https://github.com/heybuybuddy/BuyBuddyWeb).**
 

@@ -1,37 +1,48 @@
-# ES6 SDK browser boilerplate
+# Buy Buddy Javascript Client
 
-This boilerplate is intended for the development of third-party SDK's and browser applications using modern ES6 JavaScript.
-This is a simplified and enhanced version of [babel-library-boilerplate](https://github.com/babel/babel-library-boilerplate)
+Lead maintainer: [Buğra Ekuklu (Chatatata)](https://github.com/Chatatata).
+
+**If you're searching for our licensed web application, go to [BuyBuddyWeb](https://github.com/heybuybuddy/BuyBuddyWeb).**
+
+## Abstract
+The Buy Buddy Javascript Software Development Kit makes your web and Node.js applications integrate easily with Buy Buddy platform to create astonishing shopping experience.
+This library provides a generic abstraction layer to access Buy Buddy platform in a modular way.
 
 ### Features
-* ES6 syntax using [Babel compiler](https://babeljs.io/).
-* Code linting with [eslint](http://eslint.org/) and [jscs](http://jscs.info/).
-* Builds for browser using [browserify](http://browserify.org/) and [babelify](https://github.com/babel/babelify).
-* Code minification and optimization using [UglifyJS2](https://github.com/mishoo/UglifyJS2).
-* Unit tests with [mocha](http://mochajs.org/), [chai](http://chaijs.com/) and [sinon](http://sinonjs.org/).
-* Code coverage reports for unit tests using [istanbul](https://github.com/gotwarlost/istanbul) and [isparta](https://github.com/douglasduteil/isparta).
-* Integration tests with [karma](https://github.com/karma-runner/karma).
-* [Gulp](http://gulpjs.com/) task runner.
+- **Platform management**: A Javascript-friendly approach to the underlying RESTful API. Every single entity found in our platform can be managed with this library.
+- **Simplified payments**: You might use your own payment system, or you can use existing ones found in APIs.
+- **Impressive platform support**: You can use this software development kit in web browsers (Chrome, Safari, Firefox etc.), Node.js/io.js and React Native.
+- **Built with ES7**: We implemented this software development kit using latest Javascript technologies, including ES7, Karma and promises. Don't worry about backwards compatibility, polyfills are included.
 
-### Installation Prerequisites
-* [NodeJS](https://nodejs.org/download/) or [io.js](https://iojs.org/en/index.html) with npm.
-* [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
+## Installation
+You can install our software development kit with various installation methods.
 
-### Installation
+### Node.js/io.js
+
+If you're using *npm*, it is available as a package.
+
 ```bash
-$ git clone git@github.com:DavidKlassen/es6-browser-boilerplate.git
-$ cd es6-browser-boilerplate
-$ npm run setup
+$ npm install buy-buddy-javascript-client --save
 ```
 
-### Available gulp tasks
-* `gulp lint` - runs eslint and jscs
-* `gulp test:unit` - runs mocha unit tests
-* `gulp coverage` - runs unit tests and generates coverage report
-* `gulp test:integration` - runs karma tests
-* `gulp test` - runs unit and integration tests and generates code coverage report
-* `gulp browserify` - builds the script for browser
-* `gulp compile` - runs uglify and generates minified script
-* `gulp build` - runs browserify and compile
-* `gulp watch` - runs watchify and watches for changes and builds script in background
-* `gulp` - default task, runs lint, test, build and compile tasks
+You can also use *yarn*.
+
+```bash
+$ yarn add buy-buddy-javascript-client
+```
+
+### Supported Platforms
+Currently, we run our integration tests in those platforms:
+- Chrome
+- Firefox
+- Safari
+- PhantomJS
+- Node.js (>= 8.9.2)
+
+### Running Unit Tests
+1. Clone the repository to your local: `git clone https://github.com/heybuybuddy/buy-buddy-javascript-client`.
+2. Install *gulp* if it is not available globally: `npm install -g gulp`.
+3. Run `gulp test:unit` for unit tests, `gulp test:integration` for integration tests. Note that integration tests needs to be run on **all** supported browsers, which needs to be installed on your computer.
+
+## License
+MIT

@@ -6,8 +6,8 @@ describe('Global reference to BuyBuddySDK', () => {
 
 describe('BuyBuddySDK', () => {
   it('should fetch environment properties during initialization', () => {
-  	const sdk = new BuyBuddySDK();
+    const sdk = new BuyBuddySDK();
 
-  	expect(sdk._env).to.not.be.undefined;
+    expect(sdk._env).to.not.be.undefined;
   });
 });

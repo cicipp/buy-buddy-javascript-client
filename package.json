@@ -8,15 +8,19 @@
     "url": "git@github.com:DavidKlassen/es6-browser-boilerplate.git"
   },
   "scripts": {
-    "setup": "npm install && gulp"
+    "setup": "npm install && gulp",
+    "test": "NODE_PATH=. gulp"
   },
   "devDependencies": {
     "babel": "^5.6.7",
     "babel-eslint": "^4.1.8",
     "babelify": "^6.1.2",
+    "body-parser": "^1.18.2",
     "browserify": "^10.2.4",
     "chai": "^3.0.0",
+    "express": "^4.16.2",
     "gulp": "^3.9.0",
+    "gulp-env": "^0.4.0",
     "gulp-eslint": "^0.14.0",
     "gulp-istanbul": "^0.10.0",
     "gulp-jscs": "^1.6.0",
@@ -43,6 +47,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.4",
+    "node-fetch": "^1.7.3",
     "whatwg-fetch": "^2.0.3"
   }
 }

@@ -21,8 +21,7 @@ gulp.task('lint', function () {
     return gulp.src(['src/**/*.js', 'tests/**/*.js'])
         .pipe(plugins.eslint())
         .pipe(plugins.eslint.format())
-        .pipe(plugins.eslint.failAfterError())
-        .pipe(plugins.jscs());
+        .pipe(plugins.eslint.failAfterError());
 });
 
 gulp.task('coverage', function (done) {

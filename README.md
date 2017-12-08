@@ -22,13 +22,13 @@ You can install our software development kit with various installation methods.
 If you're using *npm*, it is available as a package.
 
 ```bash
-$ npm install buy-buddy-javascript-client --save
+$ npm install buy-buddy --save
 ```
 
 You can also use *yarn*.
 
 ```bash
-$ yarn add buy-buddy-javascript-client
+$ yarn add buy-buddy
 ```
 
 ### Supported Platforms

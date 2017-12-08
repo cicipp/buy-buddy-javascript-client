@@ -5,8 +5,8 @@ import injectScopeValidator from 'utils/injectScopeValidator';
  *
  * Fetches a user from the platform by given query parameters.
  */
-async function fetchUser(user, object) {
-  
+async function fetchUser() {
+
 }
 
 export default injectScopeValidator(fetchUser, ['personalInformation']);

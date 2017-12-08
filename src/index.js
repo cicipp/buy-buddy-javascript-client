@@ -5,4 +5,4 @@ export default class BuyBuddySDK {
     this._config = config;
     this._env = getCurrentEnvironment();
   }
-};
+}
